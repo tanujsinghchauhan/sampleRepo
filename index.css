@@ -1,0 +1,106 @@
+@keyframes box1 {
+    0% {background-color: red; fill: red;}
+    25% {background-color: pink; fill: pink;}
+    50% {background-color: green; fill: green;}
+    75% {background-color: yellow; fill: yellow;}
+    100% {background-color: black; fill: black;}
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: box1;
+    animation-duration: 4s;
+	fill: red;
+}
+
+
+.ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    25% {
+        transform: translateY(0) translateX(100px);
+        background-color: blue;
+    }
+    50% {
+        transform: translateY(100px) translateX(100px);
+        background-color: green;
+    }
+    75% {
+        transform: translateY(100px) translateX(0px);
+        background-color: yellow;
+    }
+	 100% {
+        transform: translateY(0px) translateX(0px);
+        background-color: red;
+    }
+	
+}
+.vit{
+	font-size: 12px;
+	font-family: arial;
+	animation: fo 3s infinite;
+}
+@keyframes fo{
+	0%{
+		transform: translateY(0) translateX(0);
+	}
+	50%{
+		transform: translateY(100px) translateX(0);
+		font-size: 40px;
+	font-family: serif;
+	}
+	100%{
+		transform: translateY(300px) translateX(0);
+		font-size: 80px;
+	font-family: monospace;
+	}
+}
+.vit2{
+	margin-top:500px;
+	font-size: 12px;
+	font-family: arial;
+	animation: fo2 3s infinite;
+}
+@keyframes fo2{
+	0%{
+		transform: translateY(0) translateX(0);
+	}
+	50%{
+		transform: translateY(0) translateX(100px);
+		font-size: 40px;
+	font-family: serif;
+	}
+	100%{
+		transform: translateY(0) translateX(300px);
+		font-size: 80px;
+	font-family: monospace;
+	}
+}
+.tri {
+    margin-top: 700px;
+    animation: rot 3s infinite linear;
+    fill: purple;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
